@@ -1,0 +1,169 @@
+/* Базовый сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* contener */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    margin-top: 80px; 
+}
+
+/* Nawigacja */
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd; 
+  }
+  
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  
+  /* main links */
+  nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    ;
+  }
+
+ nav ul li a:hover {
+    background-color: #f4f4f4;
+  }
+
+  nav ul li .sublink {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0 ;
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    border: 1px solid #ccc; 
+  }
+  
+  nav ul li .sublink a {
+    color: rgb(0, 102, 255);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+  }
+  
+
+nav ul li:hover .sublink {
+    display: block;
+}
+
+/* Maain content */
+.view {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); 
+    height: 60%;
+}
+
+.right-side ol li {
+    margin-bottom: 15px;
+    margin-left: 20px; 
+    padding: 10px;
+}
+.view h1 {
+    font-size: 50px;  
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.view p {
+    margin-bottom: 20px;
+    font-size: 20px; 
+    color: rgb(95, 95, 95);
+}
+
+.view img {
+    width: 30%; 
+    height: auto;
+    max-width: 100%;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.view h3 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: white;
+    color: rgb(63, 63, 63);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+/* table */
+.right-side table th, .right-side table td {
+    padding: 15px;  
+    text-align: left;
+}
+
+.right-side ol li {
+    margin-bottom: 10px; 
+}

@@ -51,10 +51,12 @@ nav ul li.main-link a {
   border-bottom: 1px solid rgba(150, 177, 202, 0.5);
 }
 
-nav ul li .sublink a {
-  background-color: #58b4ff; 
+nav ul li.sublink a {
+  background-color: #3377AA;
   padding-right: 25px;
   padding-left: 20px;
+  border-top: 1px solid rgba(135, 144, 168, 0.5);
+  border-bottom: 1px solid rgba(137, 150, 179, 0.5);
 }
 
 nav ul li a:hover {
